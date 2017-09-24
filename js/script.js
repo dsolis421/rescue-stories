@@ -28,7 +28,7 @@ function postStory() {
 
 function picSlideShow() {
   setInterval(function(){
-    $('header').css('background-image','url(\'/img/'+$pet_ss[$ss_counter]+'\')');
+    $('header').css('background-image','url(\'img/'+$pet_ss[$ss_counter]+'\')');
     if($ss_counter < $pet_ss.length - 1) {
       $ss_counter++
     } else {
