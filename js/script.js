@@ -28,7 +28,7 @@ function postStory() {
 
 function picSlideShow() {
   setInterval(function(){
-    $('header').css('background-image','url(\"/img/'+$pet_ss[$ss_counter]+'\")');
+    $('header').css('background-image','url(\"../img/'+$pet_ss[$ss_counter]+'\")');
     if($ss_counter < $pet_ss.length - 1) {
       $ss_counter++
     } else {
@@ -71,7 +71,7 @@ $(document).ready(function(){
       $('#rescue-story-form input[type="submit"]').attr('value','Submit');
       $('#rescue-form-message').html('<h2>Thank you for sharing!</h2><p>We\'ll be sure to\
         let you know when the site is up and running, with your story.</p>');
-      $('#rescue-story-form input[type="submit"]').css('display','none');  
+      $('#rescue-story-form input[type="submit"]').css('display','none');
     } else {
       $('#rescue-form-message').html('<h2>You\'re about to send us your amazing story.</h2>\
        <p>Is it written exactly they way you like?</p>')

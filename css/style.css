@@ -55,7 +55,7 @@ ul {
 }
 
 header {
-  background-image: url('/img/aaron-barnaby-125239.jpg');
+  background-image: url('../img/aaron-barnaby-125239.jpg');
   background-position: left;
   background-size: cover;
   transition: all 3s;
