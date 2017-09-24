@@ -124,6 +124,14 @@ header > div > div:hover {
   cursor: pointer;
 }
 
+footer {
+  background: #462310;
+  color: #fff;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+
 @media screen and (max-width: 1100px) {
   body {
     padding: 5px;
