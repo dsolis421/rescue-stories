@@ -12,7 +12,7 @@ var $ss_sub_confirm = false;
 
 function postStory() {
   $.ajax({
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSeGpF5ZbsHVkkuxod0dgR97Rg4CdB6_saFgK9HgvReQxlFsEQ/formResponse",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLScHFSzuMz6bIKLqmgM7E-dgZ539h0G8KE7kAUSYlu8npoJUFw/formResponse",
       data: $(this).serialize(),
       type: "POST",
       dataType: "xml",
