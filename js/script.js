@@ -12,10 +12,11 @@ var $ss_sub_confirm = false;
 
 function postStory() {
   $.ajax({
+      crossDomain: true,
       url: "https://docs.google.com/forms/d/e/1FAIpQLScHFSzuMz6bIKLqmgM7E-dgZ539h0G8KE7kAUSYlu8npoJUFw/formResponse",
       data: $(this).serialize(),
       type: "POST",
-      dataType: "xml",
+      dataType: "jsonp",
       success: function(data) {
           console.log('Submission successful');
       },
