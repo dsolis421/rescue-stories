@@ -1,0 +1,148 @@
+/*
+new color scheme
+blue: #5DA4C1
+orange: #F7A375
+dark orange: #E0763D
+brown: #462310
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+  background: #5DA4C1;
+  color: #462310;
+  font-family: 'Yantramanav', sans-serif;
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+p,
+li,
+label {
+  font-size: 25px;
+}
+
+ul {
+  padding: 3px 35px;
+}
+
+header {
+  background-image: url('/img/aaron-barnaby-125239.jpg');
+  background-position: left;
+  background-size: cover;
+  transition: all 3s;
+}
+
+header > div {
+  background: rgba(255, 255, 255, .8);
+  padding: 10px;
+  width: 300px;
+}
+
+header > div > div {
+  background: #E0763D;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+}
+
+header > div p:last-of-type {
+  margin: 10px 0;
+}
+
+section {
+  height: auto;
+}
+
+form {
+  display: none;
+  height: auto;
+  margin: 20px auto;
+  width: 70%;
+}
+
+input, textarea {
+  display: block;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 0 5px;
+  border: none;
+}
+
+input {
+  height: 35px;
+  width: 300px;
+}
+
+textarea {
+  height: 600px;
+  overflow-y: scroll;
+  resize: none;
+  width: 99%;
+}
+
+input[type="submit"] {
+  background: #E0763D;
+  display: inline-block;
+  float: right;
+}
+
+input[type="submit"]:hover,
+header > div > div:hover {
+  background: #F7A375;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    padding: 5px;
+    width: 98%;
+  }
+
+  header {
+    background: none;
+  }
+
+  header > div {
+    width: auto;
+  }
+
+  header > div > span {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+  }
+}
