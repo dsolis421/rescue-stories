@@ -81,6 +81,10 @@ header > div p:last-of-type {
   margin: 10px 0;
 }
 
+span {
+  display: block;
+}
+
 section {
   height: auto;
 }
