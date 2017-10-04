@@ -13,6 +13,17 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <header>
     <div>
       <h1>My Rescue Story</h1>
@@ -25,6 +36,15 @@
       <div id="share-my-story">
         Share My Story
       </div>
+      <div class="fb-share-button"
+        data-href="https://dsolis421.github.io/rescue-stories/"
+        data-layout="button"
+        data-size="large"
+        data-mobile-iframe="true">
+          <a class="fb-xfbml-parse-ignore"
+            target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdsolis421.github.io%2Frescue-stories%2F&amp;src=sdkpreparse">Share</a>
+      </div>
       <span>photos found on <a href="https://unsplash.com">unsplash.com</a></span>
     </div>
   </header>
@@ -32,41 +52,11 @@
     <form id="rescue-story-form" action="https://docs.google.com/forms/d/e/1FAIpQLScHFSzuMz6bIKLqmgM7E-dgZ539h0G8KE7kAUSYlu8npoJUFw/formResponse" target="_self" method="POST">
       <h2>Share Your Story</h2>
       <label>Name </label>
-      <input type="text"
-        jsname="YPqjbf"
-        autocomplete="off"
-        tabindex="0"
-        aria-label="Name"
-        aria-describedby="i.desc.1266984773 i.err.1266984773"
-        name="entry.1120162405"
-        value=""
-        required dir="auto"
-        data-initial-dir="auto"
-        data-initial-value="">
+      <input type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" aria-describedby="i.desc.1266984773 i.err.1266984773" name="entry.1120162405" value="" required dir="auto" data-initial-dir="auto" data-initial-value="">
       <label>Where are you from?</label>
-      <input type="text"
-        jsname="YPqjbf"
-        autocomplete="off"
-        tabindex="0"
-        aria-label="From"
-        aria-describedby="i.desc.700310753 i.err.700310753"
-        name="entry.1485611311"
-        value=""
-        dir="auto"
-        data-initial-dir="auto"
-        data-initial-value="">
+      <input type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="From" aria-describedby="i.desc.700310753 i.err.700310753" name="entry.1485611311" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
       <label>Email (Optional)</label>
-      <input type="email"
-        jsname="YPqjbf"
-        autocomplete="off"
-        tabindex="0"
-        aria-label="Email"
-        aria-describedby="i.desc.1664905769 i.err.1664905769"
-        name="entry.1535925517"
-        value=""
-        dir="auto"
-        data-initial-dir="auto"
-        data-initial-value="">
+      <input type="email" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1664905769 i.err.1664905769" name="entry.1535925517" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
       <div id="rescue-form-message">
         <h2>Not sure what to say?</h2>
         <ul>
@@ -85,16 +75,7 @@
         </ul>
       </div>
       <input type="submit" name="submit" value="Submit" />
-      <textarea jsname="YPqjbf"
-        data-rows="1"
-        tabindex="0"
-        aria-label="Story"
-        jscontroller="gZjhIf"
-        jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;"
-        required name="entry.1652810791"
-        dir="auto"
-        data-initial-dir="auto"
-        data-initial-value=""></textarea>
+      <textarea jsname="YPqjbf" data-rows="1" tabindex="0" aria-label="Story" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" required name="entry.1652810791" dir="auto" data-initial-dir="auto" data-initial-value=""></textarea>
       <input type="hidden" name="fvv" value="1">
       <input type="hidden" name="draftResponse" value="[null,null,&quot;-3290728963195095600&quot;]">
       <input type="hidden" name="pageHistory" value="0">
